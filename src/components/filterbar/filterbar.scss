@@ -1,0 +1,15 @@
+@import '../../styles/_theme.scss';
+
+.filterbar-container {
+  width: 100%;
+
+  .filterbar-input {
+    width: 100%;
+    height: 32px;
+    border: 1px solid $gray-light;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: $font-label;
+    outline: none;
+  }
+}

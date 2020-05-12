@@ -1,0 +1,58 @@
+@import '../../styles/_theme.scss';
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 290px;
+  margin: 16px 0;
+}
+
+.header-search-type {
+  display: flex;
+  width: 100%;
+  height: 32px;
+
+  .header-search-type-button {
+    flex: 1;
+    padding: 8px 0 28px;
+    border-radius: $extreme-round $extreme-round 0px 0px;
+    text-align: center;
+    cursor: pointer;
+    border-top: 3px solid $gray-lighter;
+
+    &.selected {
+      background-color: $accent-color;
+      color: white;
+    }
+
+    .header-search-type-button-text.active{
+      text-decoration: $primary-color underline;
+    }
+  }
+}
+
+.filterbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px $extreme-round $extreme-round;
+  padding-bottom: 16px;
+  background-color: $accent-color;
+  color: white;
+
+  .filterbar-title {
+    margin: 48px 0;
+  }
+
+  .filter-bar-container{
+    width: 70%
+  }
+}
+
+.powerstats-filter-container {
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+@import '../../styles/_theme.scss';
+
+.token-button {
+  height: 32px;
+  padding: 0px 16px;
+  font-size: $font-label;
+  font-weight: bold;
+  color: white;
+  background-color: $accent-color;
+  border: 2px solid white;
+  border-radius: $extreme-round;
+  outline: none;
+
+
+  &:hover {
+    background-color: white;
+    color: $accent-color;
+  }
+
+  &.modal-close-button {
+    margin: 8px 0px 0px 8px;
+  }
+}

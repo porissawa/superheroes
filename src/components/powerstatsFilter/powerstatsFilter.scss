@@ -1,0 +1,46 @@
+@import '../../styles/_theme.scss';
+
+.powerstats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0px 0px $extreme-round $extreme-round;
+  padding-bottom: 16px;
+  background-color: $accent-color;
+  color: white;
+
+  .powerstats-columns-container {
+    display: flex;
+    align-items: center;
+    height: 170px;
+    width: 70%;
+    justify-content: center;
+
+    .left-side {
+      margin-right: 16px;
+      width: 50%;
+    }
+
+    .right-side {
+      width: 50%;
+    }
+  }
+
+  .powerstats-stat-container {
+    &>label {
+      width: 100%;
+      display: block;
+    }
+    .powerstat-slider {
+      height: 14px;
+      width: 100%;
+    }
+    .powerstat-number {
+      display: block;
+      height: 1.2rem;
+      text-align: right;
+    }
+  }
+}
