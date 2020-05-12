@@ -4,13 +4,15 @@ import PropTypes from 'prop-types'
 import Filterbar from '../filterbar/Filterbar'
 import PowerstatsFilters from '../powerstatsFilter/PowerstatsFilter'
 import './filters.scss'
+import Button from '../button/Button'
 
 const Filters = ({
   filterHeroes,
   stats,
   setFilterStats,
   resetFilterStats,
-  query
+  query,
+  setQuery,
 }) => {
   const [shownTab, setShownTab] = useState(0)
   return (
@@ -54,6 +56,10 @@ const Filters = ({
               query={query}
             />
           </div>
+          <Button
+            text='Reset name'
+            onClick={() => setQuery('')}
+          />
         </div>
       )}
       {shownTab === 1 && (
@@ -82,7 +88,8 @@ Filters.propTypes = {
   }),
   setFilterStats: PropTypes.func.isRequired,
   resetFilterStats: PropTypes.func.isRequired,
-  query: PropTypes.string
+  query: PropTypes.string,
+  setQuery: PropTypes.func,
 }
 
 export default Filters

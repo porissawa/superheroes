@@ -65,6 +65,7 @@ function App () {
           resetFilterStats={resetFilterStats}
           stats={stats}
           query={query}
+          setQuery={setQuery}
         />
         {!isPopulatingDone
           ? <Spinner />
