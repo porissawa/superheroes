@@ -12,7 +12,7 @@ const Filters = ({
   setFilterStats,
   resetFilterStats,
   query,
-  setQuery,
+  setQuery
 }) => {
   const [shownTab, setShownTab] = useState(0)
   return (
@@ -89,7 +89,7 @@ Filters.propTypes = {
   setFilterStats: PropTypes.func.isRequired,
   resetFilterStats: PropTypes.func.isRequired,
   query: PropTypes.string,
-  setQuery: PropTypes.func,
+  setQuery: PropTypes.func
 }
 
 export default Filters
