@@ -41,7 +41,7 @@ export default function reducer (state = initialState, action) {
           action.response
             // disabled since it feeds curr to acc[curr.name] and the acc itself
             // back to acc, effectively spreading without creating an extra copy.
-            // eslint-disable-next-line no-sequences
+            // eslint-disable-next-line no-return-assign, no-sequences
             .reduce((acc, curr) => (acc[curr.name] = curr, acc), {}))
       }
     case INITIAL_FETCH_FINISHED:
