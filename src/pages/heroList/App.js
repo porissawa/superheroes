@@ -45,9 +45,9 @@ function App () {
     setSelectedHero(null)
   }
 
-  const setFilterStats = ({statName, value}) => {
+  const setFilterStats = ({ statName, value }) => {
     setStats(prevState => {
-      return {...prevState, [statName]: value}
+      return { ...prevState, [statName]: value }
     })
   }
 
@@ -72,19 +72,17 @@ function App () {
             <HeroList
               heroArray={sortedHeroesArray
                 .filter(
-                  el => el.name.toLowerCase().includes(query.toLowerCase())
-                  && isMatchWith(
-                      el.powerstats,
-                      stats,
-                      (objVal, srcVal) => +objVal >= srcVal
-                    )
-                )
-              }
+                  el => el.name.toLowerCase().includes(query.toLowerCase()) &&
+                  isMatchWith(
+                    el.powerstats,
+                    stats,
+                    (objVal, srcVal) => +objVal >= srcVal
+                  )
+                )}
               onHeroClick={heroClick}
             />
-          )
-        }
-        
+          )}
+
       </div>
       {selectedHero && (
         <>
@@ -92,7 +90,7 @@ function App () {
             hero={selectedHero}
             deselectHero={deselectHero}
           />
-          
+
         </>
       )}
     </div>

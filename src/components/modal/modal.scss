@@ -14,6 +14,11 @@
   overflow: hidden;
   border-radius: $hard-round;
 
+  .modal-top-bar {
+    background-color: $accent-color;
+    padding-bottom: 8px;
+  }
+
   .modal-content {
     display: flex;
     flex-direction: column;

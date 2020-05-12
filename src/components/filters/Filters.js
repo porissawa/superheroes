@@ -10,7 +10,7 @@ const Filters = ({
   stats,
   setFilterStats,
   resetFilterStats,
-  query,
+  query
 }) => {
   const [shownTab, setShownTab] = useState(0)
   return (
@@ -21,7 +21,7 @@ const Filters = ({
           className={`header-search-type-button ${shownTab !== 1 && 'selected'}`}
           onClick={() => setShownTab(0)}
         >
-          <span 
+          <span
             className={
               `header-search-type-button-text ${query ? 'active' : ''}`
             }
@@ -34,7 +34,7 @@ const Filters = ({
           className={`header-search-type-button ${shownTab !== 0 && 'selected'}`}
           onClick={() => setShownTab(1)}
         >
-          <span 
+          <span
             className={
               `header-search-type-button-text ${Object.values(stats).length > 0 ? 'active' : ''}`
             }
@@ -78,11 +78,11 @@ Filters.propTypes = {
     intelligence: PropTypes.number,
     power: PropTypes.number,
     speed: PropTypes.number,
-    strength: PropTypes.number,
+    strength: PropTypes.number
   }),
   setFilterStats: PropTypes.func.isRequired,
   resetFilterStats: PropTypes.func.isRequired,
-  query: PropTypes.string,
+  query: PropTypes.string
 }
 
 export default Filters

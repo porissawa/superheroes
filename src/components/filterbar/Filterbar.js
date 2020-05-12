@@ -5,9 +5,8 @@ import './filterbar.scss'
 
 const Filterbar = ({
   filterHeroes,
-  query,
+  query
 }) => {
-
   return (
     <input
       type='text'
@@ -20,7 +19,7 @@ const Filterbar = ({
 
 Filterbar.propTypes = {
   filterHeroes: PropTypes.func,
-  query: PropTypes.string,
+  query: PropTypes.string
 }
 
 export default Filterbar

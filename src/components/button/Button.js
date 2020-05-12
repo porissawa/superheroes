@@ -6,7 +6,7 @@ import './button.scss'
 const Button = ({
   text,
   onClick,
-  className,
+  className
 }) => (
   <button
     className={`token-button ${className}`}
@@ -19,7 +19,7 @@ const Button = ({
 Button.propTypes = {
   text: PropTypes.string,
   onClick: PropTypes.func,
-  className: PropTypes.string,
+  className: PropTypes.string
 }
 
 export default Button

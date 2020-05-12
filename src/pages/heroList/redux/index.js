@@ -2,7 +2,7 @@ import heroesReducer from './heroes'
 
 // Root reducer definition
 const HeroListReducers = {
-  heroesReducer,
-};
+  heroesReducer
+}
 
 export default HeroListReducers

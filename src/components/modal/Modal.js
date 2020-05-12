@@ -8,15 +8,17 @@ const Modal = ({
   className,
   children,
   closeModal,
-  onBackdropClick,
+  onBackdropClick
 }) => (
   <>
     <div className={`modal-container ${className}`}>
-      <Button
-        text='X'
-        onClick={() => closeModal(null)}
-        className={'modal-close-button'}
-      />
+      <div className='modal-top-bar'>
+        <Button
+          text='X'
+          onClick={() => closeModal(null)}
+          className='modal-close-button'
+        />
+      </div>
       <div className='modal-content'>
         {children}
       </div>
@@ -32,6 +34,7 @@ Modal.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
   closeModal: PropTypes.func.isRequired,
+  onBackdropClick: PropTypes.func.isRequired
 }
 
 export default Modal

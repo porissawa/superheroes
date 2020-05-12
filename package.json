@@ -7,8 +7,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
-    "lodash.debounce": "^4.0.8",
-    "lodash.ismatch": "^4.4.0",
     "lodash.ismatchwith": "^4.4.0",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
@@ -18,7 +16,6 @@
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "reselect": "^4.0.0",
     "standard": "^14.3.3"
   },
   "scripts": {
@@ -41,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
